@@ -20,9 +20,16 @@ const MemberService = {
             .where('id', id)
             .first()
     },
-    deleteMember(knex, id) {
+    getMemberByName(knex, name) {
+        return knex
+            .select('*')
+            .from('members')
+            .where('name', name)
+            .first()
+    },
+    deleteMember(knex, name) {
         return knex('members')
-            .where({id})
+            .where({name})
             .delete()
     },
     updateMember(knex, id, newMemberFields) {
