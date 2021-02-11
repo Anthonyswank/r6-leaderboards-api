@@ -1,26 +1,26 @@
-# Express Boilerplate!
+# R6-Leaderboards-API
 
-This is a boilerplate project used for starting new projects!
+## https://r6-leaderboards.vercel.app/
 
-## Set up
+Welcome to the Back-end code of my first fullstack project, R6 Leaderboards!
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+This code pairs with my front-end code found here: 
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## https://github.com/Anthonyswank/r6-leaderboards
 
-## Scripts
+This app is based on a game me and a group of buddies enjoy, pushing
+our competitiveness to the next level. Being able to track and push
+for the top of the leaderboard, this app will do that for you. I had alot
+of fun developing this, and cant wait to add more to it in the future!
 
-Start the application `npm start`
+My API consists of being able to see all members currently added, as well as being able to add and delete those members from the leaderboard at any time.
 
-Start nodemon for the application `npm run dev`
+Technology used in this project includes,
 
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's main branch.
+    - Javascript
+    - React JS
+    - Express
+    - PostgreSQL
+    - Mocha
+    - Supertest
+    - React testing library
