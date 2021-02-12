@@ -24,3 +24,36 @@ Technology used in this project includes,
     - Mocha
     - Supertest
     - React testing library
+    
+
+## Responses
+
+The main API endpoint recieves all members in the database. The format of the JSON is below. The ID is assigned in the database, and the modified variable is also assigned on member creation.
+
+```javascript
+{
+  "id": integer,
+  "name": string,
+  "number": string
+  "last_modified": string(Date)
+}
+```
+
+The `name` attribute contains the member's name, and is displayed in the leaderboard.
+
+The `number` attribute represents the rank of the member. A png file is assigned with each grouping of ranks, and is also displayed on the leaderboard.
+
+The `last_modified` attribute represents when the member was added. Its a date string gathered on POST request, and is formatted into a more
+visually appealing string.
+
+## Status Codes
+
+R6 leaderboards returns the following status codes in its API:
+
+| Status Code | Description |
+| :--- | :--- |
+| 200 | `OK` |
+| 201 | `CREATED` |
+| 400 | `BAD REQUEST` |
+| 404 | `NOT FOUND` |
+| 500 | `INTERNAL SERVER ERROR` |
