@@ -34,7 +34,7 @@ The main API endpoint recieves all members in the database. The format of the JS
 {
   "id": integer,
   "name": string,
-  "number": string
+  "number": string,
   "last_modified": string(Date)
 }
 ```
